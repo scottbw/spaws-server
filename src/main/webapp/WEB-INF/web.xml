@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+	<display-name>edukapp</display-name>
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+
+	<servlet>
+		<description>Reviews </description>
+		<display-name>reviews</display-name>
+		<servlet-name>reviews</servlet-name>
+		<servlet-class>uk.ac.bolton.spaws.service.Reviews</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>reviews</servlet-name>
+		<url-pattern>/reviews</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description>Statistics </description>
+		<display-name>statistics</display-name>
+		<servlet-name>statistics</servlet-name>
+		<servlet-class>uk.ac.bolton.spaws.service.Statistics</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>statistics</servlet-name>
+		<url-pattern>/statistics</url-pattern>
+	</servlet-mapping>
+  
+	
+	
+</web-app>
